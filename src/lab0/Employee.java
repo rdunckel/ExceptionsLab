@@ -61,10 +61,9 @@ public class Employee {
     /**
      * Sets the number of vacation days for the employee.
      *
-     * Validates a range of vacation days, between 0 and the MAX_VACATION_DAYS
-     * constant.
-     *
      * @param daysVacation The number of vacation days the employee is allowed.
+     * Validated to ensure the String object is not null, is not empty, and
+     * contains all alpha characters.
      * @throws IllegalArgumentException in the event of a value outside of the
      * valid range.
      */
@@ -83,10 +82,9 @@ public class Employee {
     /**
      * Sets the employee's first name.
      *
-     * Validates to ensure the String object is not null, is not empty, and
-     * contains all alpha characters.
-     *
-     * @param firstName The employee's first name.
+     * @param firstName The employee's first name. Validated to ensure the
+     * String object is not null, is not empty, and contains all alpha
+     * characters.
      * @throws IllegalArgumentException if validation on the string fails.
      */
     public final void setFirstName(String firstName) throws IllegalArgumentException {
@@ -104,10 +102,9 @@ public class Employee {
     /**
      * Sets the hire date for the employee.
      *
-     * Validates to ensure the date object is not null and the hire date is
-     * greater than the MIN_HIRE_DATE constant.
-     *
-     * @param hireDate The employee's hire date.
+     * @param hireDate The employee's hire date. Validated to ensure the date
+     * object is not null and the hire date is greater than the MIN_HIRE_DATE
+     * constant.
      * @throws IllegalArgumentException if validation on the date fails.
      */
     public final void setHireDate(Date hireDate) throws IllegalArgumentException {
@@ -125,7 +122,7 @@ public class Employee {
     /**
      * Sets the employee's last name.
      *
-     * @param lastName The employee's last name, validated to ensure the String
+     * @param lastName The employee's last name. Validated to ensure the String
      * object is not null, is not empty, and contains all alpha characters.
      * @throws IllegalArgumentException if validation on the string fails.
      */
@@ -144,10 +141,9 @@ public class Employee {
     /**
      * Sets the employee's social security number.
      *
-     * Validated to ensure the ssn String object is not null, is greater than
-     * zero, and is all numeric.
-     *
-     * @param ssn The employee's social security number.
+     * @param ssn The employee's social security number. Validated to ensure the
+     * ssn String object is not null, is greater than zero, and is all numeric.
+     * [Should be of the format 123456789].
      * @throws IllegalArgumentException if validation on the SSN fails.
      */
     public final void setSsn(String ssn) throws IllegalArgumentException {
