@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Represents a 'typical' human employee in corporate America.
  *
- * @author Ryan Dunckel
+ * @author Ryan Dunckel, rdunckel@my.wctc.edu
  * @version 1.00
  */
 public class Employee {

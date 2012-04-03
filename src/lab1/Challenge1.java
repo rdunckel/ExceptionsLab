@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  * the program from crashing. In addition you must display a friendly error
  * message in a JOptionPane and ask the user to try again.
  * 
- * @author  Jim Lombardo, jlombardo@wctc.edu
+ * @author  Ryan Dunckel, rdunckel@my.wctc.edu
  * @version 1.00
  */
 public class Challenge1 {
@@ -26,7 +26,7 @@ public class Challenge1 {
         JOptionPane.showMessageDialog(null, msg);
     }
     
-    public String extractLastName(String fullName) {
+    public String extractLastName(String fullName) throws ArrayIndexOutOfBoundsException {
         String[] nameParts = fullName.split(" ");
         return nameParts[LAST_NAME_IDX];
     }
