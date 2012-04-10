@@ -1,4 +1,4 @@
-package lab3;
+package lab4;
 
 /**
  * Exception thrown when an invalid name is used.
